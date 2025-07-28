@@ -1,0 +1,8102 @@
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "treatment"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "doctor"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "agency"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "ground"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "listen"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "child"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "indicate"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "moment"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "half"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "group"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "tell"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "ask"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "thousand"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "very"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "myself"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "order"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "teach"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "value"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "actually"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "do"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "final"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "middle"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "third"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "election"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "worker"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "much"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "wrong"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "claim"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "he"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "human"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "student"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "foot"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "affect"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "be"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "to"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "level"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "my"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "loss"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "five"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "whatever"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "prepare"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "anyone"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "direction"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "trial"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "role"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "ever"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "minute"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 6, "account": "admin@cortez.info", "passwd": "zte_Jzp%nI2D"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "43f18118-a32a-4c93-9c9e-6300f12955f9"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "report_q1.pdf",
+        "size": 102400
+      },
+      {
+        "name": "planning.xlsx",
+        "size": 204800
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "sign"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "yard"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS820+",
+    "serial": "6941E762",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Documents",
+        "path": "/volume1/documents"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Projects",
+        "path": "/volume1/projects"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 999}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1045,
+    "message": "Version not supported"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/employee_data.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_a3577c3f-3490-43a0-9659-2f0ea0b8c418"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FakeModule.Bogus
+Method: fake_method
+Params: {"foo": "avoid"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown API or method"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2, "sid": ""}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1050,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"vers": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1013,
+    "message": "Missing or invalid parameters"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: fake_method
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 1001,
+    "message": "Unknown method for this API"
+  }
+}
+<|end_header_id|>

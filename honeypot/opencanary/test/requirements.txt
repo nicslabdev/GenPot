@@ -1,0 +1,9 @@
+requests
+paramiko==2.12.0
+PyMySQL
+gitpython
+pytest
+transformers
+torch
+torchvision
+torchaudio
