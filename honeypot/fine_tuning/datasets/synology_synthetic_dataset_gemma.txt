@@ -1,0 +1,1713 @@
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/docs/participant.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_31b52a95-4e3d-4772-b43f-10265bfec71c"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "yard.odt",
+        "size": 305186
+      },
+      {
+        "name": "find.js",
+        "size": 26231
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 3, "account": "malonejesus@example.org", "passwd": "_f4pcZ)RW2"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "e326da26-e516-49d8-b9de-3257105d8c1b"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS925+",
+    "serial": "LCWF5955",
+    "firmware": "DSM 7.1.5"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS839+",
+    "serial": "BITr4425",
+    "firmware": "DSM 7.1.2"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 101,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 1, "account": "shampton@example.com", "passwd": "60uO7C7by#"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 400,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 3, "path": "/volume1/finance/type.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_39dd225b-899e-4e9d-84c6-4b0672f7d456"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/beat.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 101,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "successful.bmp",
+        "size": 447680
+      },
+      {
+        "name": "product.jpeg",
+        "size": 102415
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 1, "account": "kyle60@example.org", "passwd": ")Os$VgOZk8"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 400,
+    "message": "Invalid parameter"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 3, "account": "popecody@example.com", "passwd": "25Mh_GHW!i"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "80c7984d-fd80-43c7-8621-05732c04ce5a"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 2, "account": "robertcarney@example.net", "passwd": "&C^lDW#mk3"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "7cae2d82-73c0-4f9a-80b8-4a26c0125eda"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 3, "account": "hollymorris@example.net", "passwd": "@w8fQOAgTV"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "c961084a-1e8a-4251-9045-2bdf6d003b3c"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS945+",
+    "serial": "mpbT9300",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 3, "folder_path": "/volume1/finance"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/hr/idea.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_307384ce-5ccc-40c4-b989-ced60a2e322e"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 3, "account": "jmatthews@example.org", "passwd": "k%4#GMxdSb"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "71a841dc-4d8e-4d27-8327-24bdf3ac63d3"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 3, "account": "douglas48@example.com", "passwd": "&@KugFv85*"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 101,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/hr"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "building.json",
+        "size": 74136
+      },
+      {
+        "name": "also.pptx",
+        "size": 463985
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/docs/education.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_21c5df82-5bf7-46ad-91ea-a3d6e559125d"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 3, "account": "xwelch@example.net", "passwd": "N7aZKJkO^x"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "0d3bf090-1991-4e55-9b79-c76034a816a1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 1, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "know.avi",
+        "size": 77485
+      },
+      {
+        "name": "half.tiff",
+        "size": 286139
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 1, "path": "/volume1/hr/social.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_56d33756-5b1b-4a7f-b0b3-d18626788a24"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 1, "path": "/volume1/docs/group.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_001c2357-6f6a-4305-bc11-c7c26ddaa55c"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 101,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS868+",
+    "serial": "uMwU0487",
+    "firmware": "DSM 7.1.5"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 3, "folder_path": "/volume1/engineering"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "assume.wav",
+        "size": 37962
+      },
+      {
+        "name": "material.mp3",
+        "size": 240814
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 3, "account": "tyrone60@example.net", "passwd": "3$bljKGo*2"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS803+",
+    "serial": "oZAz7015",
+    "firmware": "DSM 7.1.5"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/docs/talk.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_5aa0f259-3605-47e1-a0b2-6da7620ea68c"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 3, "folder_path": "/volume1/hr"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "apply.png",
+        "size": 428945
+      },
+      {
+        "name": "common.avi",
+        "size": 255218
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "quite.mp3",
+        "size": 315058
+      },
+      {
+        "name": "player.jpg",
+        "size": 428097
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "effect.html",
+        "size": 464152
+      },
+      {
+        "name": "partner.xlsx",
+        "size": 85553
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 1, "folder_path": "/volume1/finance"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "save.mov",
+        "size": 75623
+      },
+      {
+        "name": "red.mp4",
+        "size": 25625
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS865+",
+    "serial": "TBZn6349",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "whether.xls",
+        "size": 382180
+      },
+      {
+        "name": "a.html",
+        "size": 348845
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS921+",
+    "serial": "VoAK4574",
+    "firmware": "DSM 7.1.5"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS836+",
+    "serial": "JBvv5931",
+    "firmware": "DSM 7.1.4"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 3, "path": "/volume1/hr/protect.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_db8f413f-f4e5-4599-bdee-388da3f9d4aa"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 3, "path": "/volume1/docs/natural.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 101,
+    "message": "Invalid parameter"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "material.mov",
+        "size": 98787
+      },
+      {
+        "name": "cup.wav",
+        "size": 370078
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS832+",
+    "serial": "QOZX7496",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "generation.mov",
+        "size": 295936
+      },
+      {
+        "name": "trial.json",
+        "size": 383109
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/marketing"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "discussion.odt",
+        "size": 285078
+      },
+      {
+        "name": "three.gif",
+        "size": 125680
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 1, "account": "vmcdaniel@example.org", "passwd": "#9gAYbH+hz"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 400,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 2, "account": "jennifer87@example.com", "passwd": "5F5MAd0Lj^"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 400,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 400,
+    "message": "Invalid parameter"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/finance/drug.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Invalid parameter"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS919+",
+    "serial": "XxDk7350",
+    "firmware": "DSM 7.1.4"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 2, "account": "tonyblair@example.net", "passwd": "RI2Vmof$t$"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "put.mov",
+        "size": 139072
+      },
+      {
+        "name": "family.mov",
+        "size": 496807
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 2, "account": "nkane@example.com", "passwd": "!7s)!LBxc6"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 1, "account": "justin71@example.net", "passwd": "x*M5UcR3Q&"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/finance/glass.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_ba790fa4-55d4-41c7-97ed-6c414ef6d57a"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "leader.wav",
+        "size": 399066
+      },
+      {
+        "name": "choice.tiff",
+        "size": 397491
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 3, "path": "/volume1/finance/line.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 1, "account": "williamnguyen@example.com", "passwd": "U0Em$WMd$k"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "of.mp3",
+        "size": 451369
+      },
+      {
+        "name": "available.json",
+        "size": 106722
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 1, "path": "/volume1/hr/college.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_dc80814d-ffe0-4326-ba12-c6f0600a0fe2"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS919+",
+    "serial": "iqsT1450",
+    "firmware": "DSM 7.1.4"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 2, "folder_path": "/volume1/marketing"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "white.wav",
+        "size": 375663
+      },
+      {
+        "name": "its.avi",
+        "size": 23998
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.DownloadStation.Task
+Method: list
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 3, "path": "/volume1/docs/goal.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_e8b00c35-fbeb-45c6-bb3b-79645bad045a"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 2, "account": "zbrown@example.net", "passwd": "^4KevktgT@"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "ab50eee1-6149-41f4-acd2-4d3cb508dc6d"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 101,
+    "message": "Invalid parameter"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 2, "path": "/volume1/docs/organization.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "task": "download_1ec1f616-48d2-4d81-8fed-a629fde100cf"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 1, "path": "/volume1/hr/time.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 3, "folder_path": "/volume1/engineering"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "brother.mp3",
+        "size": 404213
+      },
+      {
+        "name": "result.json",
+        "size": 176226
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 2, "account": "katieduran@example.org", "passwd": "+tZN^LHe2S"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Invalid parameter"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS843+",
+    "serial": "ebel6296",
+    "firmware": "DSM 7.1.1"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 403,
+    "message": "Session timeout"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 1, "account": "elizabethmartinez@example.com", "passwd": "!SxW0OYrt4"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 1, "account": "vpennington@example.net", "passwd": ")TPY7em*1H"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Unknown error"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 1, "path": "/volume1/hr/suggest.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "message": "Access denied"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 3}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list_share
+Params: {"version": 1}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "shares": [
+      {
+        "name": "Public",
+        "path": "/volume1/public"
+      },
+      {
+        "name": "HR",
+        "path": "/volume1/hr"
+      },
+      {
+        "name": "Engineering",
+        "path": "/volume1/engineering"
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.Download
+Method: download
+Params: {"version": 1, "path": "/volume1/docs/however.xlsx"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 101,
+    "message": "Invalid parameter"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 1, "folder_path": "/volume1/projects"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "files": [
+      {
+        "name": "interesting.doc",
+        "size": 195141
+      },
+      {
+        "name": "while.webm",
+        "size": 340221
+      }
+    ]
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.API.Auth
+Method: login
+Params: {"version": 2, "account": "sethosborne@example.org", "passwd": "_Y7Flfo8m("}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "sid": "2e22ec4f-2553-4130-b623-ea6b166378a3"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.Core.System
+Method: info
+Params: {"version": 2}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": true,
+  "data": {
+    "model": "RS980+",
+    "serial": "BQbp2605",
+    "firmware": "DSM 7.1.5"
+  }
+}
+<|end_header_id|>
+<|begin_of_text|><|start_header_id|>user
+API: SYNO.FileStation.List
+Method: list
+Params: {"version": 1, "folder_path": "/volume1/hr"}
+<|end_header_id|>
+<|start_header_id|>assistant
+{
+  "success": false,
+  "error": {
+    "code": 101,
+    "message": "Invalid parameter"
+  }
+}
+<|end_header_id|>

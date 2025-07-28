@@ -1,0 +1,500 @@
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Engineering/draft_8.txt", "name": "final_2.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Marketing/Temp/invoice_1032.pdf", "to": "/volume1/HR/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/nda.docx", "to": "/volume1/Compliance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Marketing/Policies", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Marketing/Temp/nda.docx", "to": "/volume1/Finance/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/invoice_1032.pdf", "to": "/volume1/Engineering/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Marketing/draft_8.txt", "name": "final_8.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Marketing/Policies", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Legal/Temp/employee_list.pdf", "to": "/volume1/Logistics/Reports/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Reports", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Finance/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/HR/draft_2.txt", "name": "final_2.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Engineering/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Compliance/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Engineering/Manuals/employee_list.pdf", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Sales/Temp/roadmap_2024.txt", "to": "/volume1/Legal/Contracts/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Legal/Manuals/invoice_1032.pdf", "to": "/volume1/Finance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Finance/Temp/employee_list.pdf", "to": "/volume1/Legal/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/IT/Manuals/budget.xlsx", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Archive", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/IT/NewFolder6"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Marketing/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Legal/Temp/nda.docx", "to": "/volume1/HR/Policies/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Marketing/Archive", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Logistics/Archive", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Sales/NewFolder9"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Compliance/draft_2.txt", "name": "final_3.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/nda.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Marketing/draft_1.txt", "name": "final_8.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/HR/Temp/budget.xlsx", "to": "/volume1/Finance/Contracts/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Engineering/Manuals/employee_list.pdf", "to": "/volume1/Compliance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Legal/Policies", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/HR/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Logistics/NewFolder9"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/roadmap_2024.txt", "to": "/volume1/HR/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/roadmap_2024.txt", "to": "/volume1/Legal/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Engineering/Manuals/nda.docx", "to": "/volume1/Finance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Engineering/NewFolder8"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/IT/NewFolder3"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Engineering/Manuals/security_policy.pdf", "to": "/volume1/Finance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Finance/Manuals/employee_list.pdf", "to": "/volume1/Compliance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Sales/draft_7.txt", "name": "final_7.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Marketing/Temp/employee_list.pdf", "to": "/volume1/Engineering/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/IT/draft_9.txt", "name": "final_6.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Sales/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Logistics/Temp/nda.docx", "to": "/volume1/Logistics/Backups/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/HR/Backups"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Compliance/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Legal/Manuals/invoice_1032.pdf", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Logistics/draft_1.txt", "name": "final_3.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Sales/NewFolder5"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Sales/Manuals/roadmap_2024.txt", "to": "/volume1/Engineering/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Marketing/NewFolder7"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Compliance/Manuals/roadmap_2024.txt", "to": "/volume1/HR/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Engineering/Manuals/nda.docx", "to": "/volume1/IT/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Logistics/Temp/invoice_1032.pdf", "to": "/volume1/Logistics/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Engineering/draft_8.txt", "name": "final_9.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/HR/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Sales/Temp/nda.docx", "to": "/volume1/Legal/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Compliance/Temp/nda.docx", "to": "/volume1/Logistics/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/budget.xlsx", "to": "/volume1/Legal/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Compliance/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/IT/Temp/security_policy.pdf", "to": "/volume1/IT/Backups/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Legal/draft_6.txt", "name": "final_7.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Archive", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Projects"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Marketing/Backups", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/IT/Temp/nda.docx", "to": "/volume1/IT/Policies/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Engineering/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Sales/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/invoice_1032.pdf", "to": "/volume1/Compliance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/nda.docx", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Logistics/NewFolder2"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Finance/Policies", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Backups"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Marketing/Temp/invoice_1032.pdf", "to": "/volume1/Compliance/Policies/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Archive"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Plans", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Logistics/draft_5.txt", "name": "final_9.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Archive", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Finance/Temp/nda.docx", "to": "/volume1/Marketing/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Reports", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Legal/draft_3.txt", "name": "final_2.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Marketing/NewFolder7"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Marketing/Reports", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Engineering/Reports", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/IT/Policies"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Compliance/Policies", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Marketing/NewFolder3"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/IT/draft_8.txt", "name": "final_4.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/IT/Manuals/invoice_1032.pdf", "to": "/volume1/Legal/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/HR/NewFolder3"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/IT/NewFolder8"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Finance/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Projects"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Sales/NewFolder6"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Engineering/Archive", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Engineering/NewFolder6"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Sales/Manuals/security_policy.pdf", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/HR/NewFolder9"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Compliance/Temp/nda.docx", "to": "/volume1/IT/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/invoice_1032.pdf", "to": "/volume1/IT/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Logistics/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Engineering/Policies"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Finance/Temp/nda.docx", "to": "/volume1/Legal/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Logistics/NewFolder6"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Engineering/Reports", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/HR/Temp/roadmap_2024.txt", "to": "/volume1/Sales/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Logistics/Temp/roadmap_2024.txt", "to": "/volume1/Sales/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Engineering/Archive", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Engineering/Projects", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Legal/draft_5.txt", "name": "final_7.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Legal/NewFolder6"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/IT/Manuals/roadmap_2024.txt", "to": "/volume1/Sales/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Finance/Archive", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Engineering/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Sales/NewFolder1"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/roadmap_2024.txt", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/HR/Archive", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Engineering/draft_2.txt", "name": "final_4.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Engineering/Manuals/security_policy.pdf", "to": "/volume1/Legal/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/HR/Plans", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/IT/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Compliance/NewFolder4"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Reports", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/budget.xlsx", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Finance/Backups"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Sales/draft_3.txt", "name": "final_3.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Finance/Plans", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Logistics/draft_8.txt", "name": "final_2.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Sales/Reports", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Engineering/Backups", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Finance/Policies", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Sales/Projects"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/budget.xlsx", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Policies"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/IT/Manuals/nda.docx", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Compliance/Contracts", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/IT/Policies"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Logistics/draft_4.txt", "name": "final_5.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Logistics/draft_5.txt", "name": "final_5.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Compliance/draft_7.txt", "name": "final_4.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Compliance/Policies"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Legal/Manuals/invoice_1032.pdf", "to": "/volume1/Engineering/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/IT/Temp/budget.xlsx", "to": "/volume1/Compliance/Reports/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Legal/Reports", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Engineering/Temp/nda.docx", "to": "/volume1/Compliance/Policies/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Logistics/Temp/security_policy.pdf", "to": "/volume1/Sales/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Legal/Temp/roadmap_2024.txt", "to": "/volume1/Logistics/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/IT/NewFolder3"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/IT/NewFolder6"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Logistics/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Backups"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Logistics/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Logistics/Archive", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Sales/Temp/budget.xlsx", "to": "/volume1/Finance/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Engineering/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Marketing/draft_3.txt", "name": "final_8.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Logistics/Projects", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Engineering/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/HR/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/HR/Temp/employee_list.pdf", "to": "/volume1/Marketing/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Marketing/Temp/roadmap_2024.txt", "to": "/volume1/Engineering/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Contracts", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Engineering/draft_1.txt", "name": "final_9.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Engineering/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/IT/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Legal/Plans", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Legal/NewFolder10"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/HR/Plans", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Sales/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Marketing/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Sales/NewFolder5"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Engineering/NewFolder1"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Sales/draft_2.txt", "name": "final_5.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Marketing/NewFolder10"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/IT/NewFolder10"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/roadmap_2024.txt", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Sales/NewFolder3"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/IT/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Marketing/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Engineering/nda.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Compliance/Temp/nda.docx", "to": "/volume1/Engineering/Contracts/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Marketing/NewFolder5"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Legal/Projects", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/HR/draft_4.txt", "name": "final_6.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/HR/draft_6.txt", "name": "final_9.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Finance/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Legal/NewFolder10"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Sales/Plans", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/roadmap_2024.txt", "to": "/volume1/HR/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Finance/Manuals/roadmap_2024.txt", "to": "/volume1/Sales/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Projects"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Compliance/Temp/invoice_1032.pdf", "to": "/volume1/Finance/Reports/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Logistics/Projects"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/nda.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Projects"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Finance/NewFolder8"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/IT/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/IT/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Compliance/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/employee_list.pdf", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Legal/NewFolder1"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Marketing/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Compliance/Temp/nda.docx", "to": "/volume1/Engineering/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/nda.docx", "to": "/volume1/Engineering/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Logistics/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/invoice_1032.pdf", "to": "/volume1/HR/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Compliance/NewFolder2"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/invoice_1032.pdf", "to": "/volume1/IT/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Engineering/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Engineering/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Legal/draft_7.txt", "name": "final_6.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Sales/Manuals/invoice_1032.pdf", "to": "/volume1/Engineering/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Engineering/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Engineering/Temp/nda.docx", "to": "/volume1/Logistics/Backups/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Legal/draft_6.txt", "name": "final_3.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Engineering/draft_1.txt", "name": "final_8.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Compliance/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Engineering/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Sales/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Finance/draft_6.txt", "name": "final_6.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Sales/NewFolder7"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/IT/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Logistics/Temp/nda.docx", "to": "/volume1/Compliance/Policies/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Compliance/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Archive"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/HR/Temp/security_policy.pdf", "to": "/volume1/Finance/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Sales/Temp/roadmap_2024.txt", "to": "/volume1/Marketing/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/nda.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Projects"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/IT/Manuals/budget.xlsx", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/roadmap_2024.txt", "to": "/volume1/Legal/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Logistics/NewFolder5"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Logistics/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Legal/Contracts", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Compliance/Backups", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Legal/Temp/invoice_1032.pdf", "to": "/volume1/Logistics/Contracts/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Compliance/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Engineering/NewFolder5"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Engineering/Plans", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Marketing/draft_1.txt", "name": "final_7.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Logistics/Plans", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Logistics/draft_2.txt", "name": "final_9.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Finance/Contracts", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/IT/NewFolder1"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Engineering/Temp/security_policy.pdf", "to": "/volume1/Sales/Backups/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Plans", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/nda.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Compliance/NewFolder2"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Sales/Manuals/invoice_1032.pdf", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/IT/draft_5.txt", "name": "final_9.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Sales/Temp/security_policy.pdf", "to": "/volume1/Sales/Reports/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/HR/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/IT/Manuals/employee_list.pdf", "to": "/volume1/Legal/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Finance/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Compliance/Manuals/invoice_1032.pdf", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/nda.docx", "to": "/volume1/IT/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/HR/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/IT/NewFolder10"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/IT/Temp/roadmap_2024.txt", "to": "/volume1/Sales/Backups/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Marketing/Temp/employee_list.pdf", "to": "/volume1/IT/Backups/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/HR/Temp/employee_list.pdf", "to": "/volume1/Marketing/Contracts/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Logistics/Plans", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/budget.xlsx", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Compliance/draft_9.txt", "name": "final_7.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/IT/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/nda.docx", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Logistics/NewFolder10"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Compliance/Manuals/invoice_1032.pdf", "to": "/volume1/HR/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Sales/Temp/security_policy.pdf", "to": "/volume1/Engineering/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Compliance/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/IT/draft_6.txt", "name": "final_7.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Sales/draft_8.txt", "name": "final_8.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Finance/Temp/employee_list.pdf", "to": "/volume1/IT/Policies/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/IT/roadmap_2024.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Compliance/Plans", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Logistics/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Legal/draft_3.txt", "name": "final_5.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Logistics/Temp/budget.xlsx", "to": "/volume1/Sales/Archive/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Marketing/Projects"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Finance/Backups"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Finance/Temp/invoice_1032.pdf", "to": "/volume1/Sales/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/budget.xlsx", "to": "/volume1/Finance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/IT/draft_4.txt", "name": "final_6.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Engineering/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Marketing/Temp/roadmap_2024.txt", "to": "/volume1/Finance/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Legal/Manuals/nda.docx", "to": "/volume1/Compliance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Sales/Temp/invoice_1032.pdf", "to": "/volume1/Engineering/Policies/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Logistics/Temp/roadmap_2024.txt", "to": "/volume1/Logistics/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/HR/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Engineering/Temp/budget.xlsx", "to": "/volume1/Engineering/Contracts/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Finance/Manuals/nda.docx", "to": "/volume1/Compliance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/budget.xlsx", "to": "/volume1/Sales/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Sales/draft_5.txt", "name": "final_2.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Legal/Manuals/employee_list.pdf", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Sales/Manuals/nda.docx", "to": "/volume1/Sales/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Finance/Manuals/security_policy.pdf", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Marketing/Contracts", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Sales/Temp/roadmap_2024.txt", "to": "/volume1/IT/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Marketing/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/security_policy.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Sales/Backups", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Marketing/draft_7.txt", "name": "final_4.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Logistics/Policies", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/IT/Manuals/nda.docx", "to": "/volume1/Sales/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Finance/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Compliance/NewFolder6"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/IT/Manuals/security_policy.pdf", "to": "/volume1/Engineering/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Legal/Temp/budget.xlsx", "to": "/volume1/Engineering/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Legal/draft_2.txt", "name": "final_4.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Marketing/draft_9.txt", "name": "final_3.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/security_policy.pdf", "to": "/volume1/Engineering/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Compliance/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Legal/NewFolder1"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Legal/Backups", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Marketing/Manuals/security_policy.pdf", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/budget.xlsx", "to": "/volume1/IT/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Legal/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Logistics/draft_1.txt", "name": "final_9.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Finance/Archive", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/IT/draft_9.txt", "name": "final_9.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Logistics/NewFolder2"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Finance/NewFolder4"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Legal/Temp/employee_list.pdf", "to": "/volume1/Finance/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/HR/draft_3.txt", "name": "final_7.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Finance/Manuals/employee_list.pdf", "to": "/volume1/HR/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Sales/Projects", "pattern": "*.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Sales/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Compliance/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Engineering/Manuals/nda.docx", "to": "/volume1/Marketing/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Sales/Manuals/nda.docx", "to": "/volume1/Finance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Finance/NewFolder1"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Sales/NewFolder1"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Compliance/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Marketing/Backups", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Engineering/budget.xlsx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Legal/Manuals/employee_list.pdf", "to": "/volume1/Logistics/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Compliance/draft_4.txt", "name": "final_4.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Sales/invoice_1032.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Legal/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Finance/Temp/budget.xlsx", "to": "/volume1/Finance/Contracts/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Finance/Manuals/roadmap_2024.txt", "to": "/volume1/Engineering/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Engineering/draft_1.txt", "name": "final_4.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/IT/Plans"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/IT/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/HR/draft_3.txt", "name": "final_5.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Engineering/Temp/invoice_1032.pdf", "to": "/volume1/Engineering/Projects/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Sales/draft_4.txt", "name": "final_2.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Sales/Contracts"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Engineering/NewFolder4"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Compliance/Manuals/security_policy.pdf", "to": "/volume1/HR/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Rename", "method": "rename", "params": {"path": "/volume1/Sales/draft_3.txt", "name": "final_5.txt"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Legal/Manuals/budget.xlsx", "to": "/volume1/HR/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/HR/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Move", "method": "move", "params": {"from": "/volume1/Marketing/Temp/roadmap_2024.txt", "to": "/volume1/Compliance/Plans/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Marketing/Plans", "pattern": "*.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Compliance/employee_list.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Delete", "method": "delete", "params": {"path": "/volume1/Logistics/nda.docx"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.SyslogClient", "method": "list", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/Logistics/Manuals/nda.docx", "to": "/volume1/Legal/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.List", "method": "list", "params": {"folder_path": "/volume1/Finance/Reports"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Copy", "method": "copy", "params": {"from": "/volume1/HR/Manuals/invoice_1032.pdf", "to": "/volume1/Compliance/Backup/"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/Finance/NewFolder7"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/IT/Projects", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Search", "method": "start", "params": {"folder_path": "/volume1/Engineering/Backups", "pattern": "*.pdf"}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.Core.System", "method": "get", "params": {}, "response": {"status": "success", "data": {"info": "Example response."}}}
+{"api": "SYNO.FileStation.Create", "method": "create", "params": {"folder_path": "/volume1/HR/NewFolder2"}, "response": {"status": "success", "data": {"info": "Example response."}}}
