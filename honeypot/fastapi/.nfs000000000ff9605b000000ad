@@ -1,4 +1,0 @@
-INFO:     Will watch for changes in these directories: ['/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/fine_tuning/fastapi']
-INFO:     Uvicorn running on http://0.0.0.0:5555 (Press CTRL+C to quit)
-INFO:     Started reloader process [2809583] using StatReload
-ERROR:    Error loading ASGI app. Could not import module "fastapi_models".
