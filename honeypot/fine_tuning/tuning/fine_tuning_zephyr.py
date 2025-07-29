@@ -5,6 +5,8 @@ import os
 import time
 import json
 import threading
+from dotenv import load_dotenv
+load_dotenv()
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
@@ -36,10 +38,10 @@ except Exception as e:
     pynvml_available = False
     mem_pre = None
 
-# Configuración
-MODEL_NAME = "HuggingFaceH4/zephyr-7b-beta"
-OUTPUT_DIR = "/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/models/zephyr_finetuned"
-DATASET_PATH = "/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/fine_tuning/datasets/zephyr_synology_dataset.txt"
+# ==== Configuración ====
+MODEL_NAME   = os.getenv("ZEPHYR_MODEL_NAME")
+OUTPUT_DIR   = os.getenv("MODELS_BASE_DIR") + "/" + os.getenv("ZEPHYR_FINETUNED_DIR_NAME")
+DATASET_PATH = os.getenv("DATASETS_BASE_DIR") + "/" + os.getenv("ZEPHYR_DATASET_NAME")
 
 # Cuantización 4-bit
 quant_config = BitsAndBytesConfig(

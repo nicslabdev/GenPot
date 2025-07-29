@@ -1,8 +1,10 @@
 import os
 import re
 import json
+from dotenv import load_dotenv
+load_dotenv()
 
-DATASET_PATH = "llama3_synology_dataset.txt"
+DATASET_PATH = os.getenv("DATASETS_BASE_DIR") + os.getenv("LLAMA_DATASET_NAME")
 EXPECTED_DIR = "expected_responses"
 os.makedirs(EXPECTED_DIR, exist_ok=True)
 

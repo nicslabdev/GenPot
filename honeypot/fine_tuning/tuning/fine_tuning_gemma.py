@@ -5,8 +5,12 @@ import os
 import time
 import json
 import threading
+from dotenv import load_dotenv
+load_dotenv()
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
+exit()
 
 import torch
 from datasets import Dataset
@@ -37,9 +41,9 @@ except Exception as e:
     mem_pre = None
 
 # ==== Configuración ====
-MODEL_NAME   = "google/gemma-7b-it"
-OUTPUT_DIR   = "/mnt/AI-DATA/jzamoraru_tfm/models/gemma_finetuned"
-DATASET_PATH = "gemma_synology_dataset.txt"
+MODEL_NAME   = os.getenv("GEMMA_MODEL_NAME")
+OUTPUT_DIR   = os.getenv("MODELS_BASE_DIR") + "/" + os.getenv("GEMMA_FINETUNED_DIR_NAME")
+DATASET_PATH = os.getenv("DATASETS_BASE_DIR") + "/" + os.getenv("GEMMA_DATASET_NAME")
 
 # ==== Quantización 4-bit ====
 quant_config = BitsAndBytesConfig(

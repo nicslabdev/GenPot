@@ -1,17 +1,23 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+# Define the models and their configurations
+
 MODELS = {
     "gemma": {
-        "hf_name": "google/gemma-7b-it",
-        "local_path": "/mnt/AI-DATA/jzamoraru_tfm/models/gemma_base"
+        "hf_name": os.getenv("GEMMA_MODEL_NAME"),
+        "local_path": os.getenv("MODELS_BASE_DIR") + os.getenv("GEMMA_BASE_MODEL_DIR")
     },
     "llama3": {
-        "hf_name": "meta-llama/Meta-Llama-3-8B-Instruct",
-        "local_path": "/mnt/AI-DATA/jzamoraru_tfm/models/llama3_base"
+        "hf_name": os.getenv("LLAMA_MODEL_NAME"),
+        "local_path": os.getenv("MODELS_BASE_DIR") + os.getenv("LLAMA_BASE_MODEL_DIR")
     },
     "zephyr": {
-        "hf_name": "HuggingFaceH4/zephyr-7b-beta",
-        "local_path": "/mnt/AI-DATA/jzamoraru_tfm/models/zephyr_base"
+        "hf_name": os.getenv("ZEPHYR_MODEL_NAME"),
+        "local_path": os.getenv("MODELS_BASE_DIR") + os.getenv("ZEPHYR_BASE_MODEL_DIR")
     },
 }
 

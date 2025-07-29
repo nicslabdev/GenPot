@@ -169,6 +169,7 @@ async def syno_api(
         prompt,
         model_name
     )
+    print(f"Generated response for {model_name}:\n{json.dumps(res, indent=4, ensure_ascii=False) if res else '❌ No valid JSON generated'}\n")
     return res or default_synology_error()
 
 # 10. ENDPOINT AUX PARA PRUEBAS

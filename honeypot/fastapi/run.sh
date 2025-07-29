@@ -1,6 +1,10 @@
 #!/bin/bash
 
-PORT=5555
+PORT=${1:-5555}  # Default port is 8000 if not provided
+if [[ ! $PORT =~ ^[0-9]+$ ]] || [ $PORT -lt 1024 ] || [ $PORT -gt 65535 ]; then
+    echo "❌ Puerto inválido. Debe ser un número entre 1024 y 65535."
+    exit 1
+fi
 APP_PATH="fastapi_server"
 LOGFILE="fastapi_server.log"
 

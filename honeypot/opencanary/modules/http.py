@@ -143,9 +143,6 @@ class BasicLogin(Resource):
         useragent = request.getHeader("user-agent") or "<not supplied>"
         is_browser = any(agent in useragent.lower() for agent in ["mozilla", "chrome", "safari", "edge"])
 
-        logtype = self.factory.logger.LOG_HTTP_GET
-        self.factory.log(f"NEW GET PETITION: User-Agent: {useragent}, is_browser: {is_browser}", transport=request.transport, logtype=logtype)
-
         if is_browser:
             # Modo navegador: mostramos el skin original
             logdata = {
@@ -365,10 +362,6 @@ class CanaryHTTP(CanaryService):
         self.banner = ubanner.encode("utf8")
         StaticNoDirListing.BANNER = self.banner
         self.listen_addr = config.getVal("device.listen_addr", default="")
-        print(
-            "ASDF ASDF Starting HTTP service on port %d with banner %s and skin %s"
-            % (self.port, self.banner.decode("utf8"), self.skin)
-        )
 
     def getService(self):
         page = BasicLogin(factory=self)
