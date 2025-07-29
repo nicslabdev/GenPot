@@ -12,22 +12,25 @@ from pydantic import BaseModel
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import PeftModel
+# Cargar variables de entorno
+from dotenv import load_dotenv
+load_dotenv()
 
 app = FastAPI()
 
 # 1. CONFIG: rutas a base + adapters
 MODEL_CONFIG = {
     "gemma": {
-        "base": "/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/models/gemma_base",
-        "adapter": "/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/models/gemma_finetuned",
+        "base": os.getenv("MODELS_BASE_DIR") + '/' + os.getenv("GEMMA_BASE_DIR_NAME"),
+        "adapter": os.getenv("MODELS_BASE_DIR") + '/' + os.getenv("GEMMA_FINETUNED_DIR_NAME"),
     },
     "llama3": {
-        "base": "/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/models/llama3_base",
-        "adapter": "/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/models/llama3_finetuned",
+        "base": os.getenv("MODELS_BASE_DIR") + '/' + os.getenv("LLAMA_BASE_DIR_NAME"),
+        "adapter": os.getenv("MODELS_BASE_DIR") + '/' + os.getenv("LLAMA_FINETUNED_DIR_NAME"),
     },
     "zephyr": {
-        "base": "/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/models/zephyr_base",
-        "adapter": "/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/models/zephyr_finetuned",
+        "base": os.getenv("MODELS_BASE_DIR") + '/' + os.getenv("ZEPHYR_BASE_DIR_NAME"),
+        "adapter": os.getenv("MODELS_BASE_DIR") + '/' + os.getenv("ZEPHYR_FINETUNED_DIR_NAME"),
     },
 }
 
@@ -59,7 +62,7 @@ for name, paths in MODEL_CONFIG.items():
 
 # 4. UTILIDADES DE PROMPTS
 def load_prompt_template(model_name: str) -> str:
-    path = os.path.join("/mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/fine_tuning/prompts", f"{model_name}.txt")
+    path = os.path.join(os.getenv("PROMPTS_BASE_DIR"), f"{model_name}.txt")
     with open(path, encoding="utf-8") as f:
         print(f"Loaded prompt template for {model_name} from {path}")
         return f.read()
