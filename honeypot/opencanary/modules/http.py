@@ -140,6 +140,7 @@ class BasicLogin(Resource):
         return Resource.render(self, request)
 
     def render_GET(self, request, loginFailed=False):
+    
         useragent = request.getHeader("user-agent") or "<not supplied>"
         is_browser = any(agent in useragent.lower() for agent in ["mozilla", "chrome", "safari", "edge"])
 
@@ -177,7 +178,6 @@ class BasicLogin(Resource):
             request.setHeader("Content-Type", "application/json")
             return b'{"success": false, "error": {"code": 1050, "message": "Invalid API or parameters"}}'
 
-
     def render_POST(self, request):
         useragent = request.getHeader("user-agent") or "<not supplied>"
         is_browser = any(agent in useragent.lower() for agent in ["mozilla", "chrome", "safari", "edge"])
@@ -203,8 +203,39 @@ class BasicLogin(Resource):
             logtype = self.factory.logger.LOG_HTTP_POST_LOGIN_ATTEMPT
             self.factory.log(logdata, transport=request.transport, logtype=logtype)
 
-            return self.err.encode()
-    
+            # Mostrar shares de forma dinámica vía API Synology
+            try:
+                api_params = {"api": "SYNO.FileStation.List", "method": "list_share", "version": "2"}
+                resp = requests.get(
+                    "http://192.168.43.171:5555/webapi/entry.cgi",
+                    params=api_params,
+                    timeout=60
+                )
+                js = resp.json()
+                shares = js.get("data", {}).get("shares", []) if js.get("success") else []
+            except Exception:
+                shares = []
+
+            request.setHeader(b"Content-Type", b"text/html; charset=utf-8")
+
+            # Load header and footer from external files
+            with open("/usr/local/lib/python3.10/site-packages/opencanary/modules/data/http/header.html", "r") as header_file:
+                header = header_file.read()
+            with open("/usr/local/lib/python3.10/site-packages/opencanary/modules/data/http/footer.html", "r") as footer_file:
+                footer = footer_file.read()
+
+            header = header.replace("$USERNAME", username)
+            items = ''.join(
+                f'<a class="share-tile" href="#">'
+                f'<span class="share-icon">📁</span>'
+                f'<div><strong>{share.get("name", "Unnamed")}</strong></div>'
+                f'<div style="font-size: 0.85em; color: #666;">{share.get("path", "")}</div>'
+                '</a>'
+                for share in shares
+            )
+            
+            return (header + items + footer).encode()
+
         # Bot/ataque → reenviamos al FastAPI
         try:
             form_data = {
