@@ -1,7 +1,10 @@
 # 🍯 Honeypot with AI
 
 <div align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2lwZTZ3djZzYW54MmY0ZmpwanBvbTRhMnd2YzYxa2FwN25lMnFxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I0e4u216Qhww8eRTVq/giphy.gif" width="300" alt="Cute Bee Animation"/>
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2lwZTZ3djZzYW54MmY0ZmpwanBvbTRhMnd2YzYxa2FwN25lMnFxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I0e4u216Qhww8eRTVq/giphy.gif" width="450" alt="Cute Bee Animation"/>
+  
+  <br/>
+  <br/>
   
   [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://python.org)
   [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
