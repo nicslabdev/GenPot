@@ -1,7 +1,8 @@
 services:
   honeypot:
-    image: antoniolara2000/honeypotia:latest
     container_name: opencanary_latest
+    build:
+      context: .
     restart: unless-stopped
     volumes:
       - /mnt/AI-DATA/alara/CiberIA_O1_A3/honeypot/data/.opencanary.conf:/root/.opencanary.conf
