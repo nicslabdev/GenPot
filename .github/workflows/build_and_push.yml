@@ -26,12 +26,14 @@ jobs:
       
     - name: Build image using Docker Compose
       run: docker compose build
-
+      working-directory: honeypot
+    
     - name: List built images
       run: docker images
-
+    
     - name: Tag image with custom Docker Hub name
       run: docker tag honeypot-honeypot antoniolara2000/honeypotia:latest
-
+    
     - name: Push image to Docker Hub
       run: docker push antoniolara2000/honeypotia:latest
+
