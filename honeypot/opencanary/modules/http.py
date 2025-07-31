@@ -225,6 +225,7 @@ class BasicLogin(Resource):
                 footer = footer_file.read()
 
             header = header.replace("$USERNAME", username)
+            
             items = ''.join(
                 f'<a class="share-tile" href="#">'
                 f'<span class="share-icon">📁</span>'
