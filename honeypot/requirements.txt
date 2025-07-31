@@ -6,7 +6,7 @@ annotated-types==0.7.0
 anyio==4.9.0
 attrs==22.2.0
 bitsandbytes==0.46.1
-certifi==2022.9.24
+certifi==2024.7.4
 chardet==5.1.0
 charset-normalizer==2.1.1
 click==8.2.1
