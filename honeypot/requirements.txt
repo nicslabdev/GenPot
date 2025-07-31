@@ -90,7 +90,7 @@ typing-inspection==0.4.1
 typing_extensions==4.14.1
 tzdata==2025.2
 uritemplate==4.1.1
-urllib3==1.26.12
+urllib3==2.5.0
 uvicorn==0.35.0
 webcolors==1.11.1
 websocket-client==1.8.0
