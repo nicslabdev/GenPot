@@ -5,12 +5,12 @@
   
   <br/>
   <br/>
+
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.11-blue.svg"></a>
+  <a href="https://huggingface.co/transformers"><img src="https://img.shields.io/badge/🤗-Transformers-yellow.svg"></a>
+  <a href="https://hub.docker.com/r/antoniolara2000/genpot"><img src="https://img.shields.io/badge/DockerHub-antoniolara2000%2Fgenpot-0db7ed?logo=docker&logoColor=white)"></a>
+  <a href=""><img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
   
-  [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://python.org)
-  [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
-  [![Transformers](https://img.shields.io/badge/🤗-Transformers-yellow.svg)](https://huggingface.co/transformers)
-  [![Docker Hub](https://img.shields.io/badge/DockerHub-antoniolara2000%2Fgenpot-0db7ed?logo=docker&logoColor=white)](https://hub.docker.com/r/antoniolara2000/genpot)
-  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 </div>
 
 An intelligent honeypot project that integrates fine-tuned language models with OpenCanary and exposes a FastAPI service for deployment and evaluation. This README mirrors the current repository layout and provides the minimal steps to get started (model download, optional fine-tuning, environment/ports configuration, container build, and access via web or API).
@@ -160,4 +160,9 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Acknowledgements
 
-This repository is part of a publication, which is also part of the project "CiberIA: Investigación e Innovación para la Integración de Ciberseguridad e Inteligencia Artificial (Proyecto C079/23)", financed by "European Union NextGeneration-EU, the Recovery Plan, Transformation and Resilience", through INCIBE. It has also been partially supported by the project SecAI (PID2022-139268OB-I00) funded by the Spanish Ministerio de Ciencia e Innovacion, and Agencia Estatal de Investigacion. Funding for open access charge: Universidad de Málaga / CBUA. 
+This repository is part of a publication, which is also part of the project "CiberIA: Investigación e Innovación para la Integración de Ciberseguridad e Inteligencia Artificial (Proyecto C079/23)", financed by "European Union NextGeneration-EU, the Recovery Plan, Transformation and Resilience", through INCIBE. It has also been partially supported by the project SecAI (PID2022-139268OB-I00) funded by the Spanish Ministerio de Ciencia e Innovacion, and Agencia Estatal de Investigacion. Funding for open access charge: Universidad de Málaga / CBUA.
+
+## Citation
+<div align="center">
+<a href="https://doi.org/10.5281/zenodo.17533746"><img src="https://zenodo.org/badge/1025448499.svg" alt="DOI"></a>
+</div>
