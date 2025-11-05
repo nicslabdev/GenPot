@@ -2,16 +2,17 @@ FROM python:3.10-slim
 
 WORKDIR /opencanary
 
-# Copia tu proyecto completo
+# Copy the entire project into the image
 COPY . .
 
-# Instala dependencias
+# Update pip and install dependencies
 RUN pip install --upgrade pip
 RUN pip install opencanary
 
-# Sobrescribe toda la instalación de opencanary con tu versión
+# Overwrite the installed opencanary package with the local version
+# (copies the project's opencanary package into the site-packages directory)
 RUN cp -r /opencanary/opencanary/* /usr/local/lib/python3.10/site-packages/opencanary/
 
-# Usa el entrypoint oficial
+# Use the official entrypoint
 ENTRYPOINT ["opencanaryd"]
 CMD ["--dev"]
