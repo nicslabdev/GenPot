@@ -32,8 +32,8 @@ jobs:
       run: docker images
     
     - name: Tag image with custom Docker Hub name
-      run: docker tag honeypot-honeypot antoniolara2000/honeypotia:latest
+      run: docker tag honeypot-honeypot antoniolara2000/genpot:latest
     
     - name: Push image to Docker Hub
-      run: docker push antoniolara2000/honeypotia:latest
+      run: docker push antoniolara2000/genpot:latest
 
