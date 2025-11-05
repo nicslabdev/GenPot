@@ -1,9 +1,9 @@
 # fastapi_models.py
-# Servidor FastAPI que simula un endpoint de Synology NAS utilizando múltiples modelos LLM fine-tuneados (LoRA/PEFT)
+# FastAPI server that simulates a Synology NAS endpoint using multiple fine-tuned LLM models (LoRA/PEFT)
 #!/usr/bin/env python3
 
-# Servidor FastAPI que simula un endpoint de Synology NAS
-# utilizando múltiples LLM fine-tuneados (LoRA/PEFT) con sets de hiperparámetros por modelo.
+# FastAPI server that simulates a Synology NAS endpoint
+# using multiple fine-tuned LLMs (LoRA/PEFT) with hyperparameter sets per model.
 
 import os, json, random
 from string import Template
@@ -12,13 +12,13 @@ from pydantic import BaseModel
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import PeftModel
-# Cargar variables de entorno
+# Load environment variables
 from dotenv import load_dotenv
 load_dotenv()
 
 app = FastAPI()
 
-# 1. CONFIG: rutas a base + adapters
+# 1. CONFIG: paths to base + adapters
 MODEL_CONFIG = {
     "gemma": {
         "base": os.getenv("MODELS_BASE_DIR") + '/' + os.getenv("GEMMA_BASE_DIR_NAME"),
@@ -43,7 +43,7 @@ QUANT_CONFIG = BitsAndBytesConfig(
     bnb_4bit_quant_type="nf4",
 )
 
-# 3. CARGA DE MODELOS A GPU
+# 3. LOADING MODELS TO GPU
 loaded_models = {}
 for name, paths in MODEL_CONFIG.items():
     print(f"Loading model {name}…")
@@ -60,7 +60,7 @@ for name, paths in MODEL_CONFIG.items():
     model.to(device).eval()
     loaded_models[name] = {"model": model, "tokenizer": tok, "device": device}
 
-# 4. UTILIDADES DE PROMPTS
+# 4. PROMPT UTILITIES
 def load_prompt_template(model_name: str) -> str:
     path = os.path.join(os.getenv("PROMPTS_BASE_DIR"), f"{model_name}.txt")
     with open(path, encoding="utf-8") as f:
@@ -72,7 +72,7 @@ def build_prompt(template_str: str, api: str, method: str, params: dict) -> str:
         api=api, method=method, params=json.dumps(params, ensure_ascii=False)
     )
 
-# 5. EXTRACCIÓN DE BLOQUE JSON
+# 5. JSON BLOCK EXTRACTION
 def extract_valid_json_block(text: str):
     candidates = []
     i = 0
@@ -95,7 +95,7 @@ def extract_valid_json_block(text: str):
         i += 1
     return max(candidates, key=lambda o: len(json.dumps(o))) if candidates else None
 
-# 6. RESPUESTAS DE ERROR GENÉRICO
+# 6. GENERIC ERROR RESPONSES
 def default_synology_error():
     choices = [
         {"code":1050,"message":"Invalid API or parameters"},
@@ -105,7 +105,7 @@ def default_synology_error():
     ]
     return {"success": False, "error": random.choice(choices)}
 
-# 7. GENERACIÓN RAW
+# 7. RAW GENERATION
 def generate_response(model_obj, tokenizer, device, prompt: str,
                       temperature, top_p, repetition_penalty, max_new_tokens) -> str:
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
@@ -120,7 +120,7 @@ def generate_response(model_obj, tokenizer, device, prompt: str,
     )
     return tokenizer.decode(out[0], skip_special_tokens=True)
 
-# 8. TRY + SETS POR MODELO
+# 8. TRY + SETS PER MODEL
 def try_generate_valid_response(model_obj, tokenizer, device, prompt: str, model_name: str):
     param_sets = {
         "gemma": [
@@ -146,7 +146,7 @@ def try_generate_valid_response(model_obj, tokenizer, device, prompt: str, model
             return js
     return None
 
-# 9. ENDPOINT SYNOPSY
+# 9. SYNOLOGY ENDPOINT
 @app.get("/webapi/entry.cgi")
 async def syno_api(
     api: str = Query(...),
@@ -175,7 +175,7 @@ async def syno_api(
     print(f"Generated response for {model_name}:\n{json.dumps(res, indent=4, ensure_ascii=False) if res else '❌ No valid JSON generated'}\n")
     return res or default_synology_error()
 
-# 10. ENDPOINT AUX PARA PRUEBAS
+# 10. AUXILIARY ENDPOINT FOR TESTING
 class GenerationRequest(BaseModel):
     prompt: str
     model: str

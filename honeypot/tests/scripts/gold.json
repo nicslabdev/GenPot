@@ -1,0 +1,346 @@
+[
+
+{
+  "request": "api=SYNO.FileStation.List&method=list_share&version=2",
+  "expected": {
+    "success": true,
+    "data": {
+      "shares": [
+        {
+          "name": "homes",
+          "path": "/volume1/homes"
+        },
+        {
+          "name": "public",
+          "path": "/volume1/public"
+        },
+        {
+          "name": "multimedia",
+          "path": "/volume1/multimedia"
+        }
+      ]
+    }
+  }
+},
+{
+  "request": "api=SYNO.Core.System&method=info&version=1",
+  "expected": {
+    "success": true,
+    "data": {
+      "hostname": "DiskStation1",
+      "model": "DS920+",
+      "serial": "ZXY9A8B7C6D5",
+      "uptime": 345678,
+      "temperature": 37
+    }
+  }
+},
+{
+  "request": "api=SYNO.DownloadStation.Task&method=list&version=1",
+  "expected": {
+    "success": true,
+    "data": {
+      "tasks": [
+        {
+          "id": "1",
+          "type": "bt",
+          "status": "finished",
+          "title": "Ubuntu-20.04.iso",
+          "size": 2469606400,
+          "size_downloaded": 2469606400,
+          "create_time": 1627891200
+        },
+        {
+          "id": "2",
+          "type": "http",
+          "status": "downloading",
+          "title": "backup_archive.zip",
+          "size": 1048576000,
+          "size_downloaded": 524288000,
+          "speed_download": 204800,
+          "create_time": 1627977600
+        }
+      ]
+    }
+  }
+},
+{
+  "request": "api=SYNO.FileStation.List&method=list&version=2&folder_path=/volume1",
+  "expected": {
+    "success": true,
+    "data": {
+      "files": [
+        {
+          "name": "public",
+          "path": "/volume1/public",
+          "type": "folder",
+          "size": 0,
+          "mtime": 1687552000
+        },
+        {
+          "name": "documents",
+          "path": "/volume1/documents",
+          "type": "folder",
+          "size": 0,
+          "mtime": 1687475600
+        },
+        {
+          "name": "backups",
+          "path": "/volume1/backups",
+          "type": "folder",
+          "size": 0,
+          "mtime": 1687399200
+        }
+      ]
+    }
+  }
+},
+{
+  "request": "api=SYNO.FileStation.Info&method=get&version=2&path=/volume1/public",
+  "expected": {
+    "success": true,
+    "data": {
+      "name": "public",
+      "path": "/volume1/public",
+      "type": "folder",
+      "size": 0,
+      "mtime": 1687603200,
+      "ctime": 1687516800,
+      "owner": "admin",
+      "group": "users",
+      "perm": {
+        "owner": "rwx",
+        "group": "r-x",
+        "other": "r-x"
+      }
+    }
+  }
+},
+{
+  "request": "api=SYNO.Core.User&method=get&version=1&user_name=admin",
+  "expected": {
+    "success": true,
+    "data": {
+      "user_name": "admin",
+      "uid": 1026,
+      "gid": 100,
+      "is_manager": true,
+      "email_enabled": true,
+      "email_addr": "admin@example.local",
+      "last_login_time": 1687598400,
+      "password_last_changed": 1685000000,
+      "home": "/var/services/homes/admin"
+    }
+  }
+},
+{
+  "request": "api=SYNO.Core.User&method=logout&version=1&user_name=admin",
+  "expected": {
+    "success": true,
+    "data": {}
+  }
+},
+{
+  "request": "api=SYNO.Core.System.Utilization&method=get&version=1",
+  "expected": {
+    "success": true,
+    "data": {
+      "cpu_total_load": 17,
+      "cpu_user_load": 10,
+      "cpu_system_load": 7,
+      "memory_total": 32768,
+      "memory_used": 14567,
+      "memory_free": 18201
+    }
+  }
+},
+{
+  "request": "api=SYNO.Core.System.Status&method=network_status&version=1",
+  "expected": {
+    "success": true,
+    "data": {
+      "network": [
+        {
+          "ifname": "eth0",
+          "link_status": true,
+          "speed": 1000,
+          "mac": "00:11:32:AA:BB:CC",
+          "ip": "192.168.1.100"
+        }
+      ]
+    }
+  }
+},
+{
+  "request": "api=SYNO.API.Auth&method=login&version=6&account=admin&passwd=1234",
+  "expected": {
+    "success": false,
+    "error": {
+      "code": 400,
+      "message": "Invalid credentials"
+    }
+  }
+},
+{
+  "request": "api=SYNO.API.Auth&method=logout&version=6&session=DownloadStation",
+  "expected": {
+    "success": true
+  }
+},
+{
+  "request": "api=SYNO.DownloadStation.Task&method=create&version=1&uri=http://example.com/file.iso",
+  "expected": {
+    "success": true,
+    "data": {
+      "task_id": ["A7F3K9L2"]
+    }
+  }
+},
+{
+  "request": "api=SYNO.DownloadStation.Task&method=delete&version=1&id=taskid_123",
+  "expected": {
+    "success": true,
+    "data": {
+      "task_id": ["X9K2P8Q4"]
+    }
+  }
+},
+{
+  "request": "api=SYNO.Core.Network&method=list&version=1",
+  "expected": {
+    "success": true,
+    "data": {
+      "interfaces": [
+        {
+          "name": "eth0",
+          "mac": "00:11:32:9A:BC:DE",
+          "status": "up",
+          "ip": "192.168.1.10",
+          "gateway": "192.168.1.1"
+        },
+        {
+          "name": "eth1",
+          "mac": "00:11:32:9A:BC:DF",
+          "status": "down",
+          "ip": "",
+          "gateway": ""
+        }
+      ],
+      "dns_servers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ]
+    }
+  }
+},
+{
+  "request": "api=SYNO.Core.Storage.Volume&method=status&version=1",
+  "expected": {
+    "success": true,
+    "data": {
+      "volumes": [
+        {
+          "id": 1,
+          "name": "volume1",
+          "status": "normal",
+          "size_total": 1099511627776,
+          "size_used": 734003200000,
+          "size_available": 365508427776
+        },
+        {
+          "id": 2,
+          "name": "volume2",
+          "status": "degraded",
+          "size_total": 2199023255552,
+          "size_used": 1231453023104,
+          "size_available": 967570233448
+        }
+      ],
+      "pool_status": "healthy",
+      "storage_pools": [
+        {
+          "pool_id": 1,
+          "name": "pool1",
+          "health": "healthy"
+        }
+      ]
+    }
+  }
+},
+{
+  "request": "api=SYNO.Core.ExternalDevice&method=list&version=1",
+  "expected": {
+    "success": true,
+    "data": {
+      "devices": [
+        {
+          "device_id": 1,
+          "name": "SanDisk USB",
+          "vendor": "SanDisk",
+          "model": "Ultra Flair",
+          "status": "connected",
+          "mount_point": "/volumeUSB1/usbshare1"
+        },
+        {
+          "device_id": 2,
+          "name": "Seagate HDD",
+          "vendor": "Seagate",
+          "model": "Backup Plus",
+          "status": "connected",
+          "mount_point": "/volumeUSB2/usbshare2"
+        }
+      ]
+    }
+  }
+},
+{
+  "request": "api=SYNO.Core.Time&method=get&version=1",
+  "expected": {
+    "success": true,
+    "data": {
+      "local_time": "2025-07-02 15:23:10",
+      "utc_time": "2025-07-02T13:23:10Z"
+    }
+  }
+},
+{
+  "request": "api=SYNO.FakeModule.Bogus&method=nonexistent&version=1",
+  "expected": {
+    "success": false,
+    "error": {
+      "code": 1050,
+      "message": "Unknown API or method"
+    }
+  }
+},
+{
+    "request": "api=SYNO.Core.System&method=info&version=999",
+    "expected": {
+      "success": false,
+      "error": {
+        "code": 1050,
+        "message": "Invalid API or parameters"
+      }
+    }
+  },
+  {
+    "request": "api=SYNO.Core.User&method=delete&version=1&user_name=",
+    "expected": {
+      "success": false,
+      "error": {
+        "code": 1050,
+        "message": "Invalid API or parameters"
+      }
+    }
+  },
+  {
+    "request": "api=SYNO.Core.User&metod=login&version=1",
+    "expected": {
+      "success": false,
+      "error": {
+        "code": 1050,
+        "message": "Invalid API or parameters"
+      }
+    }
+  }
+]

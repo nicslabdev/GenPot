@@ -36,16 +36,16 @@ try:
     mem_pre = info_pre.used
     pynvml_available = True
 except Exception as e:
-    print(f"pynvml no disponible ({e}), no mediremos VRAM ni potencia.")
+    print(f"pynvml not available ({e}), VRAM and power will not be measured.")
     pynvml_available = False
     mem_pre = None
 
-# ==== Configuración ====
+# ==== Configuration ====
 MODEL_NAME   = os.getenv("GEMMA_MODEL_NAME")
 OUTPUT_DIR   = os.getenv("MODELS_BASE_DIR") + "/" + os.getenv("GEMMA_FINETUNED_DIR_NAME")
 DATASET_PATH = os.getenv("DATASETS_BASE_DIR") + "/" + os.getenv("GEMMA_DATASET_NAME")
 
-# ==== Quantización 4-bit ====
+# ==== 4-bit quantization ====
 quant_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_compute_dtype=torch.float16,
@@ -53,7 +53,7 @@ quant_config = BitsAndBytesConfig(
     bnb_4bit_quant_type="nf4"
 )
 
-# ==== Carga modelo + LoRA ====
+# ==== Load model + LoRA ====
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True)
 base_model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME,
@@ -72,28 +72,28 @@ peft_config = LoraConfig(
 )
 model = get_peft_model(base_model, peft_config)
 
-# ==== Cargar y formatear dataset ====
+# ==== Load and format dataset ====
 def load_dataset(path):
-    """Divide por turnos <start_of_turn>…<end_of_turn>."""
+    """Split by turns <start_of_turn>…<end_of_turn>."""
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
-    # Cada ejemplo es "user" + "model" turnos
+    # Each example is "user" + "model" turns
     chunks = text.split("<start_of_turn>user")[1:]
     examples = []
     for chunk in chunks:
-        # recupera user-turn hasta <end_of_turn>
+        # retrieve user-turn until <end_of_turn>
         user_part, rest = chunk.split("<end_of_turn>", 1)
         model_part = rest.split("<start_of_turn>model",1)[1].split("<end_of_turn>",1)[0]
         prompt = user_part.strip()
         response = model_part.strip()
-        # concatenamos para el modelo
+        # concatenate for the model
         examples.append(f"<|prompt|>{prompt}\n<|response|>{response}")
     return {"text": examples}
 
 data_dict = load_dataset(DATASET_PATH)
 dataset = Dataset.from_dict(data_dict)
 
-# ==== Tokenización ====
+# ==== Tokenization ====
 def tokenize_fn(ex):
     tokens = tokenizer(
         ex["text"],
@@ -106,12 +106,12 @@ def tokenize_fn(ex):
 
 tokenized = dataset.map(tokenize_fn, batched=True, remove_columns=["text"])
 
-# ==== Split train/validation ====
+# ==== Train/validation split ====
 splits = tokenized.train_test_split(test_size=0.1, seed=42)
 train_ds = splits["train"]
 eval_ds  = splits["test"]
 
-# ==== Argumentos de entrenamiento ====
+# ==== Training arguments ====
 training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
     per_device_train_batch_size=1,
@@ -133,7 +133,7 @@ trainer = Trainer(
     data_collator=default_data_collator
 )
 
-# ==== Monitor de potencia ====
+# ==== Power monitor ====
 power_samples = []
 stop_flag = False
 def monitor_power():
@@ -149,13 +149,13 @@ if pynvml_available:
     thread = threading.Thread(target=monitor_power)
     thread.start()
 
-# ==== Entrenamiento ====  
+# ==== Training ====  
 start = time.time()
 trainer.train()
 end = time.time()
 training_time = end - start
 
-# ==== Detener monitor ====  
+# ==== Stop monitor ====  
 if pynvml_available:
     stop_flag = True
     thread.join()
@@ -165,30 +165,30 @@ else:
     avg_power = None
     energy_wh = None
 
-# ==== VRAM post-entreno ====  
+# ==== VRAM post-training ====  
 if pynvml_available:
     info_post = nvmlDeviceGetMemoryInfo(handle)
     vram_used_mb = (info_post.used - mem_pre)/1024**2
 else:
     vram_used_mb = None
 
-# ==== Pérdida final ====  
+# ==== Final loss ====  
 final_loss = None
 for entry in reversed(trainer.state.log_history):
     if "loss" in entry:
         final_loss = entry["loss"]
         break
 
-# ==== Huella de carbono ====  
+# ==== Carbon footprint ====  
 factor = 150  # gCO₂/kWh
 if energy_wh:
     carbon_kg = (energy_wh/1000)*factor/1000
 else:
     carbon_kg = None
 
-# ==== Guardar estadísticas ====  
+# ==== Save statistics ====  
 stats = {
-    "modelo": MODEL_NAME,
+    "model": MODEL_NAME,
     "output_dir": OUTPUT_DIR,
     "dataset_samples": len(dataset),
     "epochs": training_args.num_train_epochs,
@@ -211,5 +211,5 @@ with open(os.path.join(OUTPUT_DIR, "training_stats.json"), "w") as f:
 with open(os.path.join(OUTPUT_DIR, "training_log_history.json"), "w") as f:
     json.dump(trainer.state.log_history, f, indent=2)
 
-print("=== Fine-tuning Gemma completado ===")
+print("=== Gemma fine-tuning completed ===")
 print(json.dumps(stats, indent=2))

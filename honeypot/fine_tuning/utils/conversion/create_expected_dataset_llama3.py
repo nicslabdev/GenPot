@@ -9,7 +9,7 @@ EXPECTED_DIR = "expected_responses"
 os.makedirs(EXPECTED_DIR, exist_ok=True)
 
 def extract_api_method_version(user_prompt):
-    """Extrae api, method y version del prompt de usuario."""
+    """Extract api, method and version from user prompt."""
     api_match = re.search(r'API:\s*([^\n]+)', user_prompt)
     method_match = re.search(r'Method:\s*([^\n]+)', user_prompt)
     params_match = re.search(r'Params:\s*({.*})', user_prompt)
@@ -35,14 +35,14 @@ pairs = re.findall(
     raw, re.DOTALL
 )
 
-# Indexa el dataset por (api, method, version)
+# Index the dataset by (api, method, version)
 index = {}
 for user, assistant in pairs:
     api, method, version = extract_api_method_version(user)
     key = (api, method, version)
     index[key] = assistant.strip()
 
-# Define tus peticiones de test (las del bash script)
+# Define your test requests (from the bash script)
 test_requests = [
   "api=SYNO.API.Auth&method=login&version=6&account=admin&passwd=password123",
   "api=SYNO.FileStation.List&method=list_share&version=2",
@@ -63,15 +63,15 @@ test_requests = [
   "api=SYNO.Core.ExternalDevice&method=list&version=1",
   "api=SYNO.Core.Time&method=get&version=1",
   "api=SYNO.FakeModule.Bogus&method=nonexistent&version=1",
-  #Algunas peticiones erroneas para saber su comportamiento ante errores
-  "api=SYNO.Core.System&method=info&version=999",   # versión inválida
-  "api=SYNO.Core.User&method=delete&version=1&user_name=",   # parámetro vacío
-  "api=SYNO.Core.User&metod=login&version=1"   # typo en 'method'
+  # Some erroneous requests to test error handling behavior
+  "api=SYNO.Core.System&method=info&version=999",   # invalid version
+  "api=SYNO.Core.User&method=delete&version=1&user_name=",   # empty parameter
+  "api=SYNO.Core.User&metod=login&version=1"   # typo in 'method'
 ]
 
 for i, req in enumerate(test_requests, 1):
     slug = f"{i}_{slugify(req)}"
-    # Extrae los campos de la query
+    # Extract fields from the query
     api = ""
     method = ""
     version = ""
@@ -80,9 +80,9 @@ for i, req in enumerate(test_requests, 1):
         if part.startswith("method="): method = part.split("=")[1]
         if part.startswith("version="): version = part.split("=")[1]
     key = (api, method, version)
-    # Busca el ejemplo en el dataset
+    # Search for the example in the dataset
     best = index.get(key, None)
-    # Si no lo encuentra, pon ejemplo estándar de error
+    # If not found, use standard error example
     if best is None:
         best = json.dumps({
             "success": False,
@@ -92,4 +92,4 @@ for i, req in enumerate(test_requests, 1):
     with open(fname, "w") as f:
         f.write(best)
 
-print("Archivos expected responses generados en", EXPECTED_DIR)
+print("Expected response files generated in", EXPECTED_DIR)

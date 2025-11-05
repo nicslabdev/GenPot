@@ -2,11 +2,11 @@ import pandas as pd
 import json
 import csv
 
-# Cargar correctamente el CSV extendido
-print("📥 Cargando 'api_responses_extended.csv'...")
+# Load the extended CSV correctly
+print("📥 Loading 'api_responses_extended.csv'...")
 df = pd.read_csv("api_responses_extended.csv", quoting=csv.QUOTE_ALL, escapechar='\\')
 
-# Formato de prompt específico por modelo
+# Model-specific prompt format
 formats = {
     "zephyr": "[INST] Return valid JSON only. API: {api} Method: {method} Params: {params} [/INST]",
     "deepseek": "### Instruction:\nReturn valid JSON only.\nAPI: {api} Method: {method} Params: {params}\n\n### Response:\n",
@@ -18,7 +18,7 @@ datasets = {model: [] for model in formats.keys()}
 
 for _, row in df.iterrows():
     if pd.isna(row["params"]) or pd.isna(row["response"]):
-        print(f"⚠️ Saltando fila incompleta: {row.to_dict()}")
+        print(f"⚠️ Skipping incomplete row: {row.to_dict()}")
         continue
 
     api = row["api"]
@@ -35,12 +35,12 @@ for _, row in df.iterrows():
             "output": output_text
         })
 
-# Guardar datasets en formato JSONL por modelo
+# Save datasets in JSONL format per model
 for model, data in datasets.items():
     filename = f"dataset_{model}.jsonl"
     with open(filename, "w") as f:
         for entry in data:
             f.write(json.dumps(entry) + "\n")
-    print(f"✅ Dataset generado: {filename}")
+    print(f"✅ Dataset generated: {filename}")
 
-print("\n🎉 Todos los datasets han sido generados correctamente para Zephyr, Deepseek, Starcoder2 y Yi.")
+print("\n🎉 All datasets have been successfully generated for Zephyr, Deepseek, Starcoder2 and Yi.")

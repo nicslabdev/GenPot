@@ -34,16 +34,16 @@ try:
     mem_pre = info_pre.used
     pynvml_available = True
 except Exception as e:
-    print(f"pynvml no disponible ({e}), no mediremos VRAM ni potencia.")
+    print(f"pynvml not available ({e}), VRAM and power will not be measured.")
     pynvml_available = False
     mem_pre = None
 
-# ==== Configuración ====
+# ==== Configuration ====
 MODEL_NAME   = os.getenv("ZEPHYR_MODEL_NAME")
 OUTPUT_DIR   = os.getenv("MODELS_BASE_DIR") + "/" + os.getenv("ZEPHYR_FINETUNED_DIR_NAME")
 DATASET_PATH = os.getenv("DATASETS_BASE_DIR") + "/" + os.getenv("ZEPHYR_DATASET_NAME")
 
-# Cuantización 4-bit
+# 4-bit quantization
 quant_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_compute_dtype=torch.float16,
@@ -51,7 +51,7 @@ quant_config = BitsAndBytesConfig(
     bnb_4bit_quant_type="nf4"
 )
 
-# Carga modelo y LoRA
+# Load model and LoRA
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True)
 base_model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME,
@@ -70,7 +70,7 @@ peft_config = LoraConfig(
 )
 model = get_peft_model(base_model, peft_config)
 
-# Cargar dataset
+# Load dataset
 def load_dataset(path):
     with open(path, "r", encoding="utf-8") as f:
         raw = f.read().split("[INST]")
@@ -80,7 +80,7 @@ def load_dataset(path):
 data_dict = load_dataset(DATASET_PATH)
 dataset = Dataset.from_dict(data_dict)
 
-# Tokenización
+# Tokenization
 def tokenize_fn(ex):
     tokens = tokenizer(
         ex["text"],
@@ -93,12 +93,12 @@ def tokenize_fn(ex):
 
 tokenized = dataset.map(tokenize_fn, batched=True, remove_columns=["text"])
 
-# Split train / validation
+# Train / validation split
 splits = tokenized.train_test_split(test_size=0.1, seed=42)
 train_ds = splits["train"]
 eval_ds  = splits["test"]
 
-# Entrenamiento
+# Training
 training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
     per_device_train_batch_size=1,
@@ -120,7 +120,7 @@ trainer = Trainer(
     data_collator=default_data_collator
 )
 
-# Monitorización de potencia
+# Power monitoring
 power_samples = []
 stop_flag = False
 def monitor_power():
@@ -136,13 +136,13 @@ if pynvml_available:
     thread = threading.Thread(target=monitor_power)
     thread.start()
 
-# Entrena
+# Train
 start = time.time()
 trainer.train()
 end = time.time()
 training_time = end - start
 
-# Detiene monitor
+# Stop monitor
 if pynvml_available:
     stop_flag = True
     thread.join()
@@ -152,14 +152,14 @@ else:
     avg_power = None
     energy_wh = None
 
-# VRAM post
+# VRAM post-training
 if pynvml_available:
     info_post = nvmlDeviceGetMemoryInfo(handle)
     vram_used_mb = (info_post.used - mem_pre) / 1024**2
 else:
     vram_used_mb = None
 
-# Loss final
+# Final loss
 final_loss = None
 for entry in reversed(trainer.state.log_history):
     if "loss" in entry:
@@ -173,9 +173,9 @@ if energy_wh:
 else:
     carbon_kg = None
 
-# Guarda stats
+# Save stats
 stats = {
-    "modelo": MODEL_NAME,
+    "model": MODEL_NAME,
     "output_dir": OUTPUT_DIR,
     "dataset_samples": len(dataset),
     "epochs": training_args.num_train_epochs,
@@ -196,5 +196,5 @@ with open(os.path.join(OUTPUT_DIR, "training_stats.json"), "w") as f:
 with open(os.path.join(OUTPUT_DIR, "training_log_history.json"), "w") as f:
     json.dump(trainer.state.log_history, f, indent=2)
 
-print("Entrenamiento Zephyr completado. Stats:")
+print("Zephyr training completed. Stats:")
 print(json.dumps(stats, indent=2))

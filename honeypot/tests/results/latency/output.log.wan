@@ -1,0 +1,67 @@
+[INFO] Loaded 21 gold responses from ../fine_tuning/utils/test/gold.json
+
+[INFO] Model: gemma, Pipeline: api, Network: lan
+
+[INFO] Model: gemma, Pipeline: api, Network: wan
+[sudo] password for alara:
+[INFO] WAN profile 'wan' applied on loopback: delay=120ms, loss=0.5%
+[sudo] password for alara:
+[INFO] Cleared netem.
+
+[INFO] Model: gemma, Pipeline: system, Network: lan
+
+[INFO] Model: gemma, Pipeline: system, Network: wan
+[sudo] password for alara:
+[INFO] WAN profile 'wan' applied on loopback: delay=120ms, loss=0.5%
+[sudo] password for alara:
+[INFO] Cleared netem.
+
+[INFO] Model: llama3, Pipeline: api, Network: lan
+
+[INFO] Model: llama3, Pipeline: api, Network: wan
+[sudo] password for alara:
+[INFO] WAN profile 'wan' applied on loopback: delay=120ms, loss=0.5%
+[sudo] password for alara:
+[INFO] Cleared netem.
+
+[INFO] Model: llama3, Pipeline: system, Network: lan
+
+[INFO] Model: llama3, Pipeline: system, Network: wan
+[sudo] password for alara:
+[INFO] WAN profile 'wan' applied on loopback: delay=120ms, loss=0.5%
+[sudo] password for alara:
+[INFO] Cleared netem.
+
+[INFO] Model: zephyr, Pipeline: api, Network: lan
+
+[INFO] Model: zephyr, Pipeline: api, Network: wan
+[INFO] WAN profile 'wan' applied on loopback: delay=120ms, loss=0.5%
+[INFO] Cleared netem.
+
+[INFO] Model: zephyr, Pipeline: system, Network: lan
+
+[INFO] Model: zephyr, Pipeline: system, Network: wan
+[INFO] WAN profile 'wan' applied on loopback: delay=120ms, loss=0.5%
+[INFO] Cleared netem.
+
+✅ Done.
+• Raw CSV: results/latency/latency_raw.csv
+• Latency summary (with jitter): results/latency/summary_percentiles.csv
+• Correctness summary: results/latency/correctness_summary.csv
+
+📊 Note: Graphical representations will be generated in post-processing.
+
+=== Correctness Metrics Preview ===
+ model pipeline network  parse_rate  accuracy  avg_similarity  avg_key_match  n_evaluated
+ gemma      api     lan         1.0     0.795           0.405          0.876          210
+ gemma      api     wan         1.0     0.810           0.402          0.881          210
+ gemma   system     lan         1.0     0.819           0.403          0.886          210
+ gemma   system     wan         1.0     0.800           0.401          0.879          210
+llama3      api     lan         1.0     0.614           0.350          0.795          210
+llama3      api     wan         1.0     0.571           0.353          0.774          210
+llama3   system     lan         1.0     0.567           0.361          0.776          210
+llama3   system     wan         1.0     0.529           0.345          0.752          210
+zephyr      api     lan         1.0     0.857           0.462          0.905          210
+zephyr      api     wan         1.0     0.857           0.453          0.905          210
+zephyr   system     lan         1.0     0.857           0.462          0.905          210
+zephyr   system     wan         1.0     0.857           0.464          0.905          210

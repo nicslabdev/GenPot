@@ -1,7 +1,7 @@
 # evaluate_finetuned_models.py
-# Este script evalúa múltiples modelos fine-tuneados utilizando un conjunto fijo de prompts realistas basados en la API de Synology NAS.
-# Para cada modelo, genera respuestas, calcula si son JSON válidos, mide su longitud y el tiempo de respuesta.
-# Exporta los resultados en formato JSONL y CSV para su posterior análisis.
+# This script evaluates multiple fine-tuned models using a fixed set of realistic prompts based on the Synology NAS API.
+# For each model, it generates responses, calculates if they are valid JSON, measures their length and response time.
+# Exports results in JSONL and CSV format for further analysis.
 
 import torch
 import json
@@ -10,7 +10,7 @@ from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import pandas as pd
 
-# Modelos fine-tuneados a evaluar (actualizados)
+# Fine-tuned models to evaluate (updated)
 model_paths = {
     "gemma": "./models/gemma_finetuned",
     "deepseek": "./models/deepseek_finetuned",
@@ -18,7 +18,7 @@ model_paths = {
     "starcoder2": "./models/starcoder2_finetuned"
 }
 
-# Prompts comunes de evaluación (entorno empresarial realista)
+# Common evaluation prompts (realistic business environment)
 prompts = [
     "API: SYNO.FileStation.List\nMethod: list_share\nParams: {}\nResponse:",
     "API: SYNO.FileStation.List\nMethod: list\nParams: {\"folder_path\": \"/volume1/Finance/Reports\"}\nResponse:",
@@ -32,11 +32,11 @@ prompts = [
     "API: SYNO.Core.SyslogClient\nMethod: list\nParams: {}\nResponse:"
 ]
 
-# Evaluación y almacenamiento de resultados
+# Evaluation and storage of results
 results = []
 
 for name, path in model_paths.items():
-    print(f"\n🧠 Evaluando modelo: {name}")
+    print(f"\n🧠 Evaluating model: {name}")
     tokenizer = AutoTokenizer.from_pretrained(path)
     model = AutoModelForCausalLM.from_pretrained(path, torch_dtype=torch.float16, device_map="auto")
     generate = pipeline("text-generation", model=model, tokenizer=tokenizer, device_map="auto")
@@ -63,11 +63,11 @@ for name, path in model_paths.items():
             "timestamp": time.time()
         })
 
-# Guardar resultados
+# Save results
 Path("results").mkdir(exist_ok=True)
 with open("results/eval_finetuned_models.jsonl", "w", encoding="utf-8") as f:
     for row in results:
         f.write(json.dumps(row) + "\n")
 
 pd.DataFrame(results).to_csv("results/eval_finetuned_models.csv", index=False)
-print("\n✅ Resultados guardados en 'results/eval_finetuned_models.csv'")
+print("\n✅ Results saved in 'results/eval_finetuned_models.csv'")

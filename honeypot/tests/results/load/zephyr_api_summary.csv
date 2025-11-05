@@ -1,0 +1,6 @@
+concurrency,model,pipeline,duration_sec,total_requests,rps,error_rate,timeout_rate,latency_p50_ms,latency_p95_ms,latency_p99_ms,latency_mean_ms,latency_std_ms,queueing_delay_ms
+2,zephyr,api,120.0,4,0.03333333333333333,1.0,1.0,,,,,,
+4,zephyr,api,120.0,8,0.06666666666666667,1.0,1.0,,,,,,
+8,zephyr,api,120.0,16,0.13333333333333333,1.0,1.0,,,,,,
+16,zephyr,api,120.0,32,0.26666666666666666,1.0,1.0,,,,,,
+32,zephyr,api,120.0,64,0.5333333333333333,1.0,1.0,,,,,,

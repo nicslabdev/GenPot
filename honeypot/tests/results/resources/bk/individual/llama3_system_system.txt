@@ -1,0 +1,34 @@
+======================================================================
+SYSTEM INFORMATION - E3 Resource Profile
+======================================================================
+
+architecture                  : x86_64
+cpu_count_logical             : 96
+cpu_count_physical            : 48
+cpu_freq_current_mhz          : 2050.61425
+cpu_freq_max_mhz              : 0.0
+cpu_freq_min_mhz              : 0.0
+disk_free_gb                  : 4.28
+disk_total_gb                 : 98.25
+gpu_0_driver_version          : 580.95.05
+gpu_0_name                    : NVIDIA L40S
+gpu_0_vram_total_gb           : 44.99
+gpu_1_driver_version          : 580.95.05
+gpu_1_name                    : NVIDIA L40S
+gpu_1_vram_total_gb           : 44.99
+gpu_2_driver_version          : 580.95.05
+gpu_2_name                    : NVIDIA L40S
+gpu_2_vram_total_gb           : 44.99
+gpu_3_driver_version          : 580.95.05
+gpu_3_name                    : NVIDIA L40S
+gpu_3_vram_total_gb           : 44.99
+gpu_count                     : 4
+hostname                      : ai-server
+platform                      : Linux-6.1.0-40-amd64-x86_64-with-glibc2.36
+processor                     : 
+python_version                : 3.11.2
+ram_total_gb                  : 503.39
+swap_total_gb                 : 0.95
+timestamp                     : 2025-10-17T11:14:52.113623
+
+======================================================================

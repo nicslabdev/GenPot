@@ -1,0 +1,19 @@
+============================================================
+HARDWARE INFORMATION - E2 Load Test
+============================================================
+
+timestamp                : 2025-10-16T11:59:56.653278
+platform                 : Linux-6.1.0-23-amd64-x86_64-with-glibc2.36
+processor                : 
+cpu_count                : 48
+cpu_count_logical        : 96
+cpu_freq_mhz             : 2150.528041666667
+ram_total_gb             : 503.39
+ram_available_gb         : 475.06
+python_version           : 3.11.2
+gpu_available            : True
+gpu_name                 : NVIDIA L40S
+gpu_count                : 4
+gpu_memory_gb            : 44.43
+
+============================================================

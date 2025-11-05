@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import csv
 
-# Leer CSV correctamente escapado
+# Read correctly escaped CSV
 df = pd.read_csv("api_responses.csv", quoting=csv.QUOTE_ALL, escapechar='\\')
 
 datasets = []
@@ -11,7 +11,7 @@ for _, row in df.iterrows():
     api = row["api"]
     method = row["method"]
 
-    # ahora json.loads funciona correctamente
+    # now json.loads works correctly
     params = json.loads(row["params"])
     response = json.loads(row["response"])
 
@@ -27,7 +27,7 @@ for _, row in df.iterrows():
         "output": output_text
     })
 
-# Guardar en archivo JSONL
+# Save to JSONL file
 with open("dataset_zephyr.jsonl", "w") as f:
     for entry in datasets:
         f.write(json.dumps(entry) + "\n")

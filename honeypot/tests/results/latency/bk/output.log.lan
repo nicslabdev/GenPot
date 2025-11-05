@@ -1,0 +1,30 @@
+nohup: ignoring input
+[INFO] Loaded 21 gold responses from ../fine_tuning/utils/test/gold.json
+
+[INFO] Model: gemma, Pipeline: api, Network: lan
+
+[INFO] Model: gemma, Pipeline: system, Network: lan
+
+[INFO] Model: llama3, Pipeline: api, Network: lan
+
+[INFO] Model: llama3, Pipeline: system, Network: lan
+
+[INFO] Model: zephyr, Pipeline: api, Network: lan
+
+[INFO] Model: zephyr, Pipeline: system, Network: lan
+
+✅ Done.
+• Raw CSV: results/latency/latency_raw.csv
+• Latency summary (with jitter): results/latency/summary_percentiles.csv
+• Correctness summary: results/latency/correctness_summary.csv
+
+📊 Note: Graphical representations will be generated in post-processing.
+
+=== Correctness Metrics Preview ===
+ model pipeline network  parse_rate  accuracy  avg_similarity  avg_key_match  n_evaluated
+ gemma      api     lan         1.0     0.777           0.409          0.866          220
+ gemma   system     lan         1.0     0.791           0.405          0.875          220
+llama3      api     lan         1.0     0.527           0.341          0.757          220
+llama3   system     lan         1.0     0.591           0.352          0.789          220
+zephyr      api     lan         1.0     0.814           0.456          0.884          220
+zephyr   system     lan         1.0     0.818           0.454          0.886          220
