@@ -1,3 +1,4 @@
+![Fondos_INCIBE](https://github.com/nicslabdev/GenPot/raw/main/logo_fondos_incibe.png)
 # 🍯🤖 GenPot
 
 <div align="center">
